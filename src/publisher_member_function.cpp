@@ -5,9 +5,9 @@
  and publishes to the topic a customised String message every 500ms.
  * @version 0.1
  * @date 2023-11-07
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
 #include <chrono>
 #include <functional>
@@ -20,8 +20,8 @@
 using namespace std::chrono_literals;
 
 /**
- * @brief This example creates a subclass of Node and uses std::bind() to register a
- * member function as a callback from the timer (every 500ms).
+ * @brief This example creates a subclass of Node and uses std::bind() to
+ * register a member function as a callback from the timer (every 500ms).
  */
 
 class MinimalPublisher : public rclcpp::Node {
