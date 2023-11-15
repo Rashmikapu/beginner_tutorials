@@ -10,7 +10,7 @@ def generate_launch_description():
             output="screen",
             emulate_tty=True,
             parameters=[
-                {"freq": 0.5}
+                {"freq": 201.0}
             ]
         ),
         Node(
