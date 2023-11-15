@@ -56,12 +56,27 @@ ament_target_dependencies(listener rclcpp std_msgs)
 rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
 target_link_libraries(listener "${cpp_typesupport_target}")
 
+add_executable(param_pub src/param_publisher.cpp)
+ament_target_dependencies(param_pub rclcpp std_msgs)
+
+add_executable(param_sub src/param_subscriber.cpp)
+ament_target_dependencies(param_sub rclcpp std_msgs)
+
+
 install(TARGETS
   talker
   server
   client
   listener
+  param_pub
+  param_sub
   DESTINATION lib/${PROJECT_NAME})
+
+  # Install launch files.
+install(DIRECTORY
+launch
+DESTINATION share/${PROJECT_NAME}/
+)
 
 # if(BUILD_TESTING)
 #   find_package(ament_lint_auto REQUIRED)
