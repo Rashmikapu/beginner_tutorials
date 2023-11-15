@@ -1,13 +1,13 @@
 /**
  * @file subscriber_member_function.cpp
  * @author Rashmi Kapu (rashmik@umd.edu)
- * @brief A simple subscriber that subscribes to the topic named 'topic' 
+ * @brief A simple subscriber that subscribes to the topic named 'topic'
  to read the messages of type 'std_msgs::msg::String' and print on the console.
  * @version 0.1
  * @date 2023-11-07
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
 
 #include <memory>
@@ -19,7 +19,7 @@ using std::placeholders::_1;
 /**
  * @brief MinimalSubscriber class node that extends the rclcpp class
  It reads messages from the topic 'topic' and prints on the screen.
- * 
+ *
  */
 class MinimalSubscriber : public rclcpp::Node {
  public:

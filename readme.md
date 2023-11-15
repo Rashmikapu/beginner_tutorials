@@ -115,6 +115,99 @@ ros2 run beginner_tutorials talker
 ros2 run beginner_tutorials listener
 ```
 
+
+# Run Server, Client-Publisher, Subscriber
+
+Follow the below instructions to run the simple server, client, publisher and subscriber.
+
+## Run the publisher
+```
+ros2 run beginner_tutorials server
+```
+
+Open a new terminal
+Source it
+Run the client-publisher
+
+```
+ros2 run beginner_tutorials client
+```
+
+Open a new terminal
+Source it
+Run the subscriber
+
+```
+ros2 run beginner_tutorials listener
+```
+These nodes use /topic as a topic
+Service name is change_string
+
+
+# Run Publisher and Subscriber using Parameters
+
+Follow the below instructions to run the simple publisher and subscriber that uses parameters to change publishing frequency with different log levels.
+
+
+# Run the publisher
+```
+ros2 run beginner_tutorials param_pub
+```
+This node uses /chatter topic with a parameter name "freq" of type double. Default value is 1.0 (Hz).
+To change the frequency, use the below command in a new terminal:
+
+```
+ros2 param set /param_publisher freq <frequency value (double)>
+```
+Example:
+```
+ros2 param set /param_pub freq 5.0
+```
+    
+Open a new terminal
+Source it
+Run the Subscriber
+
+```
+ros2 run beginner_tutorials param_sub
+```
+# Using a launch file to run the publisher, subscriber
+
+## Type the below command to launch publisher and subscriber with default frequency (2Hz)
+
+```
+ros2 launch beginner_tutorials launch.py
+```
+
+## To set a different frequency, open a new terminal and run the below command:
+
+```
+ros2 param set /param_pub freq <frequency value (double)>
+```
+
+Example:
+```
+ros2 param set /param_pub freq 5.0
+```
+## Type the below command to launch publisher and subscriber with user defined frequency
+
+```
+ros2 launch beginner_tutorials launch.py freq:=<user defined frequency (double)>
+```
+
+Example:
+```
+ros2 launch beginner_tutorials launch.py freq:=201.0
+```
+
+# Using rqt_console to visualize the log messages:
+
+## Run the below command in a new terminal
+
+```
+ros2 run rqt_console rqt_console
+```
+
 ## Static Code Analysis
 # cpplint
 Run the below command from inside the package folder 'beginner_tutorials'

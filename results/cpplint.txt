@@ -1,2 +1,6 @@
+Done processing src/change_string_service.cpp
+Done processing src/param_publisher.cpp
+Done processing src/param_subscriber.cpp
+Done processing src/publisher_client.cpp
 Done processing src/publisher_member_function.cpp
 Done processing src/subscriber_member_function.cpp
