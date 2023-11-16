@@ -5,9 +5,9 @@
  which publishes the modified string to the topic.
  * @version 0.1
  * @date 2023-11-14
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
 
 #include <chrono>
@@ -27,7 +27,7 @@ using std::placeholders::_1;
  Each time it calls a binded timer_callback and requests for a modified input,
  the response from the server is collected and published to the topic using this
  node.
- * 
+ *
  */
 class ServicePublisher : public rclcpp::Node {
  public:
@@ -51,10 +51,10 @@ class ServicePublisher : public rclcpp::Node {
     }
   }
 
-/**
- * @brief This callback requests the server
- * 
- */
+  /**
+   * @brief This callback requests the server
+   *
+   */
  private:
   void timer_callback() {
     auto request =
@@ -76,8 +76,8 @@ class ServicePublisher : public rclcpp::Node {
 
   /**
    * @brief This callback publishes the response to the topic.
-   * 
-   * @param future 
+   *
+   * @param future
    */
   void service_publish(
       rclcpp::Client<beginner_tutorials::srv::ChangeString>::SharedFuture

@@ -1,13 +1,13 @@
 /**
  * @file param_subscriber.cpp
  * @author Rashmi Kapu (rashmik@umd.edu)
- * @brief This is the Parameter subscriber node that subscribes to '/chatter' 
+ * @brief This is the Parameter subscriber node that subscribes to '/chatter'
  topic, to which parameter publisher publishes.
  * @version 0.1
  * @date 2023-11-14
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
 
 #include <memory>
@@ -29,11 +29,11 @@ class ParamSubscriber : public rclcpp::Node {
   }
 
  private:
- /**
-  * @brief This is the subscriber callback function.
-  * 
-  * @param msg 
-  */
+  /**
+   * @brief This is the subscriber callback function.
+   *
+   * @param msg
+   */
   void topic_callback(const std_msgs::msg::String& msg) const {
     RCLCPP_INFO(this->get_logger(), "I heard from param publisher: '%s'",
                 msg.data.c_str());
