@@ -62,6 +62,13 @@ ament_target_dependencies(param_pub rclcpp std_msgs)
 add_executable(param_sub src/param_subscriber.cpp)
 ament_target_dependencies(param_sub rclcpp std_msgs)
 
+add_executable(tf_pub src/tf_publisher.cpp)
+ament_target_dependencies(tf_pub 
+geometry_msgs
+rclcpp
+tf2
+tf2_ros)
+
 
 install(TARGETS
   talker
@@ -70,6 +77,7 @@ install(TARGETS
   listener
   param_pub
   param_sub
+  tf_pub
   DESTINATION lib/${PROJECT_NAME})
 
   # Install launch files.

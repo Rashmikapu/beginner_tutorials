@@ -45,7 +45,7 @@ class ParamPublisher : public rclcpp::Node {
 
     // Fatal
     if (freq > 0.0) {
-      RCLCPP_INFO(this->get_logger(), "Frequency:" << freq);
+      // RCLCPP_INFO(this->get_logger(), "Frequency:" + std::to_string(freq));
 
     } else if (freq > 200) {
       // Warning
