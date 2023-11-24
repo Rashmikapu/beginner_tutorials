@@ -242,13 +242,13 @@ A launch file is created in the launch directory that calls the publisher node, 
 ## Command to launch with recording
 
 ```
-ros2 launch beginner_tutorials bag_launch record_flag:=True
+ros2 launch beginner_tutorials bag_launch.py record_flag:=True
 ```
     
 ## Command to launch without recording
 
 ```
-ros2 launch beginner_tutorials bag_launch.py 
+ros2 launch beginner_tutorials bag_launch.py record_flag:=False
 ```
    
  Run this for about 15 seconds and press ctrl+c to store the data published.
