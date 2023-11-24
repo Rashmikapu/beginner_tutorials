@@ -1,0 +1,23 @@
+ros2 run beginner_tutorials param_sub
+ros2 bag play tutorial_bag
+
+[INFO] [1700840008.026308688] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 0'
+[INFO] [1700840009.025847869] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 1'
+[INFO] [1700840010.025758871] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 2'
+[INFO] [1700840011.025856962] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 3'
+[INFO] [1700840012.025766792] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 4'
+[INFO] [1700840013.025875221] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 5'
+[INFO] [1700840014.025647855] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 6'
+[INFO] [1700840015.025715222] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 7'
+[INFO] [1700840016.025693460] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 8'
+[INFO] [1700840017.026041598] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 9'
+[INFO] [1700840018.025668900] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 10'
+[INFO] [1700840019.025729751] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 11'
+[INFO] [1700840020.026147119] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 12'
+[INFO] [1700840021.025549402] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 13'
+[INFO] [1700840022.025651845] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 14'
+[INFO] [1700840023.025646882] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 15'
+[INFO] [1700840024.025348896] [param_subscriber]: I heard from param publisher: 'Hello, world! This is a parameter publisher!! 16'
+
+
+
