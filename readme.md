@@ -235,6 +235,36 @@ ros2 topic echo /tf_static
 ros2 run tf2_tools view_frames
 ```
 
+# Using ROS2 Bag files to store the published data
+
+A launch file is created in the launch directory that calls the publisher node, subscriber node and ros2 bag command with custom bag file name for storage.
+    
+## Command to launch with recording
+
+```
+ros2 launch beginner_tutorials bag_launch record_flag:=True
+```
+    
+## Command to launch without recording
+
+```
+ros2 launch beginner_tutorials bag_launch.py 
+```
+   
+ Run this for about 15 seconds and press ctrl+c to store the data published.
+
+## To see the data stored, run the subscriber node (listener) using the command
+
+```
+ros2 run beginner_tutorials param_sub
+```
+
+and then run
+
+```
+ros2 bag play tutorial_bag
+```
+
 ## run the test and look at the output: (after building package)
 
 ```
